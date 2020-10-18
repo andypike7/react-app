@@ -1,0 +1,18 @@
+@import '../App.scss';
+
+header {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+  text-align: center;
+  background: $primary-background;
+  color: $primary;
+  font-weight: bold;
+}
+
+.header__logo {
+}
+.header__slot {
+  color: green;
+}
+

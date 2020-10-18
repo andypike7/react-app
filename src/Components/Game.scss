@@ -1,0 +1,22 @@
+body,
+html {
+  height: 100%;
+  display: grid;
+}
+
+.game {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  & > div {
+    padding: 20px;
+  }
+  height: 100%;
+}
+
+.game-board {
+  background: #ddd;
+}
+
+.game-info {
+  background: #ccc;
+}
