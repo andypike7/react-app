@@ -1,18 +1,45 @@
-@import '../App.scss';
+@import '../constants.scss';
 
 header {
   display: flex;
-  justify-content: space-between;
-  padding: 10px;
-  text-align: center;
+  padding: 20px;
+  align-items: center;
   background: $primary-background;
   color: $primary;
   font-weight: bold;
 }
 
-.header__logo {
-}
-.header__slot {
-  color: green;
+@keyframes header__image {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
 }
 
+.header__image {
+  height: 44px;
+  animation: header__image infinite 10s linear;
+}
+.header__name {
+  flex-grow: 1;
+  font-size: 24px;
+  padding: 0 10px;
+  a {
+    color: $primary;
+    margin-left: 10px;
+  }
+}
+.header__avatar {
+  img {
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    transition-duration: .2s;
+    border: 2px solid transparent;
+    &:hover {
+      border: 2px solid white;
+    }
+  }
+}

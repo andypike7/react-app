@@ -1,8 +1,13 @@
-@import '../App.scss';
+@import '../constants.scss';
 
 footer {
-  padding: 10px;
   text-align: center;
+  padding: 10px 0;
   background: $primary-background;
+  color: $primary;
+}
+
+footer a {
+  margin: 0 5px;
   color: $primary;
 }
