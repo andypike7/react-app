@@ -1,21 +1,7 @@
 .board {
   padding-top: 15px;
   display: grid;
-  column-gap: 15px;
-  row-gap: 15px;
   grid-template-columns: 50px 50px 50px;
   grid-template-rows: 50px 50px 50px;
   justify-content: center;
-}
-
-.border__square {
-  border: 2px solid blue;
-  border-radius: 10px;
-  background: white;
-  transition-duration: 0.2s;
-  cursor: pointer;
-  outline: 0;
-  &:hover {
-    background: #ddf;
-  }
 }

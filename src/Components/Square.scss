@@ -1,0 +1,11 @@
+.square {
+  font-size: 32px;
+  border: 1px solid;
+  background: white;
+  transition-duration: 0.2s;
+  cursor: pointer;
+  outline: 0;
+  &:hover {
+    background: #ddf;
+  }
+}
