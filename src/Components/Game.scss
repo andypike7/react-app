@@ -1,26 +1,17 @@
-html {
-  height: 100%;
-}
-
-body {
-  margin: 0;
-  height: 100%;
-  display: grid;
-}
+@import '../constants.scss';
 
 .game {
   display: grid;
   grid-template-columns: 1fr 1fr;
+  text-align: center;
   & > div {
     padding: 20px;
   }
-  height: 100%;
 }
 
 .game-board {
-  background: #ddd;
+  background: $game-board-background;
 }
-
 .game-info {
-  background: #ccc;
+  background: $game-info-background;
 }

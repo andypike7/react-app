@@ -1,9 +1,31 @@
-import React from "react";
-import Square from "./Square";
+import React from 'react';
+import './Board.scss';
+
+// const onClick = function() {
+//   alert('click');
+// }
 
 class Board extends React.Component {
+  board = [0, 0, 0, 0, 0, 0, 0, 0, 0];
+  score = 12345;
+
+  click = () => {
+    // alert('click');
+    this.score++;
+    console.log('*** this.score:', this.score);
+  };
+
   renderSquare(i) {
-    return <Square value={i} />;
+    return (
+      <button
+        className="border__square"
+        value={i}
+        onClick={this.click}
+      >
+        {i}
+        {/* {this.props.value} */}
+      </button>
+    );
   }
 
   render() {
@@ -13,17 +35,15 @@ class Board extends React.Component {
         <div className="status">
           {status}
         </div>
-        <div className="board-row">
+        board: [{this.board}]<br />
+        score: [{this.score}]<br />
+        <div className="board">
           {this.renderSquare(0)}
           {this.renderSquare(1)}
           {this.renderSquare(2)}
-        </div>
-        <div className="board-row">
           {this.renderSquare(3)}
           {this.renderSquare(4)}
           {this.renderSquare(5)}
-        </div>
-        <div className="board-row">
           {this.renderSquare(6)}
           {this.renderSquare(7)}
           {this.renderSquare(8)}

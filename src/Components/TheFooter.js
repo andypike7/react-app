@@ -7,7 +7,7 @@ class TheFooter extends React.Component {
       <footer>
         Copyright &copy;
         <a
-          href={"https:\/\/habr.com/ru/users/andypike/"}
+          href={"https://habr.com/ru/users/andypike/"}
           title={"Author's profile at Habr.com"}
           target="_blank"
           rel="noopener noreferrer"
